@@ -16,7 +16,7 @@ const tw = new Twitter({
 
 const socket = io(3001);
 
-tw.track('javascript');
-tw.track('hello world');
+tw.location('-73.75,40.5,-73,41');
+tw.language('en');
 
 tw.on('tweet', tweet => socket.emit('tweet', tweet));
