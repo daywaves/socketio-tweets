@@ -3,3 +3,34 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.tweets {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tweet {
+  border: 2px solid #0cc;
+  padding: 1em;
+  display: flex;
+}
+
+.tweet:not(:first-child) {
+  border-top: none;
+}
+
+.tweet__image {
+  border-radius: 5px;
+  width: 48px;
+  height: 48px;
+  margin-right: 1em;
+}
+
+.tweet__username {
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.5em;
+}
