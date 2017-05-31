@@ -1,5 +1,5 @@
-import io from 'socket.io';
-import Twitter from 'node-tweet-stream';
+const io = require('socket.io');
+const Twitter = require('node-tweet-stream');
 
 const {
   CONSUMER_KEY: consumer_key,
